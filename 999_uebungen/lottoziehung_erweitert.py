@@ -27,14 +27,32 @@ Bonusmission:
 Am Ende des kompletten Durchlaufes soll auch ausgegeben werden, wie oft welche Gewinnkombination gezogen wurde.
 
 """
+# 0 -> 14
+# 1 -> 12
+# 2 -> 10
 # 3 -> 8
 # 4 -> 6
 # 5 -> 4
 # 6 -> 2
-def gewinnklasse(richtige):
+""" def gewinnklasse(richtige):
 # Range sichern
     if richtige < 2 or richtige > 6:
         return
+    return 14 - 2 * richtige
+
+print(gewinnklasse(4)) """
+
+# Nun müssen wir in diese Betrachtung Uch die Superzahl (SZ) einbeziehen
+
+# Anzahl richtige steht in der Variable 'richtige' und ob die Superzahl
+# getroffen wurde als Booleanwert in 'richtige_sz'
+def gewinnklasse_sz(richtige, richtige_sz):
+# Range sichern
+    if richtige < 2 or richtige > 6 or (richtige == 2 and not richtige_sz):
+        return
+    return 14 - 2 * richtige - richtige_sz
+
+print(gewinnklasse_sz(3, True))
 
 
 

@@ -1,20 +1,29 @@
 <style>
 h1{
     color: #FFF05F;
+    font-size: 3rem
 }
+
+p:background:{
+  background: blue;
+}
+
+p:hover{
+  background: green;
+}
+
 </style>
 
 # Python
 
-| Syntax        | Description |
-| ---------     | ----------- |
-| Header        | Title |
-| Paragraph     | Text |
+| Syntax          | Description  | Description |
+| :---------:     | :----------- | -----------:|
+| Header          | Title        | Title       | Paragraph         | Text         | Text        |
 
 ```py
 Leck micht fett
 ```
-
+>Du bist Fett
 
 ```
 {
@@ -24,5 +33,7 @@ Leck micht fett
 }
 ```
 	
+<div>DivKasten</div>
 
-
+Für eine neue Zeile müssen zwei leerzeichen eingefügt  
+werden

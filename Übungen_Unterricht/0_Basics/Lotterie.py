@@ -40,11 +40,11 @@ def lotto_simulation():
         klasse = gewinnklasse(gemeinsame_zahlen, superzahl_richtig)
 
         # Ausgabe der Ziehung
-        # print(f"Ziehung {ziehungen}: Zahlen: {lotto_zahlen}, Superzahl: {lotto_superzahl}")
+        print(f"Ziehung {ziehungen}: Zahlen: {lotto_zahlen}, Superzahl: {lotto_superzahl}")
 
         if klasse:
             gewinn_haeufigkeit[klasse] += 1
-            # print(f"Gewinnklasse erreicht: {klasse}")
+            print(f"Gewinnklasse erreicht: {klasse}")
 
             if klasse == 1:
                 print(f"Jackpot! Du hast die höchste Gewinnklasse in {ziehungen} Ziehungen erreicht!")
